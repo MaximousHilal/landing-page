@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script');
+
+/*----------------------Header start----------------------*/
+header {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/img/header.jpeg);
+    position: relative;
+}
+
+header .scroll-down {
+    width: 40px;
+    height: 40px;
+    border: 1.5px solid #fff;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    left: calc(50% - 20px);
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+header .scroll-down:hover {
+    -webkit-animation-name: heartBeat;
+    animation-name: heartBeat;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+header a {
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.header-nav {
+    padding: 10px;
+    font-size: 1.125rem;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+.header-nav .brand-logo {
+    font-size: 1.5rem;
+}
+
+.header-nav .main-nav a {
+    margin: 0 10px;
+}
+
+header .bar {
+    display: none;
+}
+
+.main-nav a {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+.main-nav a::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    position: absolute;
+    transition: width 0.25s;
+}
+
+.main-nav a:hover::after {
+    width: 50px;
+}
+
+.header-title {
+    margin: 25vh auto;
+    color: #fff;
+    text-align: center;
+}
+
+.header-title h1 {
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    font-weight: 300;
+}
+
+.header-title p {
+    font-size: 18px;
+}
+/*-----------------------header end-----------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------social nav start--------------------*/
+.social-nav {
+    background-color: #cccccc;
+}
+
+.social-nav > a {
+    margin: 0 0.5px 1px;
+    padding: 10px 0;
+    -webkit-flex: 1 0 144px;
+    -moz-flex: 1 0 144px;
+    -ms-flex: 1 0 144px;
+    -o-flex: 1 0 144px;
+    flex: 1 1 144px;
+    background-color: #fff;
+    color: #424b61;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.social-nav > a:hover {
+    color: #fff;
+    background-color: #424b61;
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+/*---------------------social nav end---------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*----------------------plans start----------------------*/
+.plans > .container,
+.featurs > .container {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 25px;
+}
+
+.plans {
+    justify-content: space-between;
+}
+
+.plans .plan {
+    -webkit-flex: 1 0 192px;
+    -moz-flex: 1 0 192px;
+    -ms-flex: 1 0 192px;
+    -o-flex: 1 0 192px;
+    flex: 1 0 192px;
+    margin: 0.25rem;
+    -webkit-box-shadow: inset 0 0 5px #bbb;
+    box-shadow: inset 0 0 5px #bbb;
+}
+
+.plans .plan ul,
+.learn-more, h4 {
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+.plan img {
+    -webkit-box-shadow: 0 5px 5px #888;
+    box-shadow: 0 5px 5px #888;
+}
+
+.plans .learn-more {
+    margin-top: auto;
+}
+
+.plans .plan-1 i,
+.plans .plan-1 a {
+    color: #0056B3;
+}
+
+.plans .plan-2 i,
+.plans .plan-2 a {
+    color: #D39E00;
+}
+
+.plans .plan-3 i,
+.plans .plan-3 a {
+    color: #1D2124;
+}
+/*----------------------plans end----------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------options start--------------------*/
+.options .option {
+    -webkit-flex: 1 0 192px;
+    -moz-flex: 1 0 192px;
+    -ms-flex: 1 0 192px;
+    -o-flex: 1 0 192px;
+    flex: 1 0 192px;
+    text-align: center;
+    margin: 0.25rem;
+}
+
+.options .option i {
+    font-size: 1.85rem;
+    color: #0056B3;
+}
+/*---------------------options end---------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------quoting start--------------------*/
+.quoting .quote {
+    padding: 8rem 6rem;
+    text-align: center;
+    background-image: url(/img/pexels-photo-quote.jpeg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #fff;
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 1;
+}
+
+.quoting .quote::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #0056B3;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.quoting .quote h4 {
+    margin-top: 50px;
+    font-family: 'Dancing Script';
+    font-size: 2.5rem;
+    font-weight: lighter;
+    font-style: italic;
+}
+/*---------------------quoting end---------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*--------------------features start--------------------*/
+.features {
+    margin: 50px 0;
+}
+
+.features i {
+    font-size: 1.75rem;
+    color: #0056B3;
+}
+
+.features .new {
+    background-color: #FFC107;
+    padding: 0.25rem 0.35rem;
+    border-radius: 25px;
+}
+
+.features .feature {
+    -webkit-flex: 1 0 256px;
+    -moz-flex: 1 0 256px;
+    -ms-flex: 1 0 256px;
+    -o-flex: 1 0 256px;
+    flex: 1 0 256px;
+    margin: 0.125rem;
+    padding: 20px 0;
+}
+/*--------------------features end--------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*----------------------faq start----------------------*/
+.faq {
+    margin: 50px 0;
+    border-collapse: collapse;
+}
+
+.faq .card {
+    border-width: 0.25px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.25);
+    padding: 1rem 1.75rem;
+}
+/*-----------------------faq end-----------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+/*---------------------footer start---------------------*/
+footer {
+    background-color: #F7F9FB;
+    padding: 50px 0;
+}
+
+.footer .copy {
+    -webkit-flex: 1 0 384px;
+    -moz-flex: 1 0 384px;
+    -ms-flex: 1 0 384px;
+    -o-flex: 1 0 384px;
+    flex: 1 0 384px;
+}
+
+.footer .copy ~ * {
+    -webkit-flex: 128px;
+    -moz-flex: 128px;
+    -ms-flex: 128px;
+    -o-flex: 128px;
+    flex: 1 0 128px;
+}
+
+.footer a {
+    display: block;
+    margin: 5px 0;
+    color: #525F7F;
+}
+
+footer a:hover {
+    color: #0056b3;
+}
+/*----------------------footer end----------------------*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@media (max-width: 770px) {
+
+    footer .flex-row div {
+        -webkit-flex: 1 0 100%;
+        -moz-flex: 1 0 100%;
+        -ms-flex: 1 0 100%;
+        -o-flex: 1 0 100%;
+        flex: 1 0 100%;
+    }
+
+    .header-nav {
+        position: relative;
+    }
+
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        overflow: hidden;
+        -webkit-animation-duration: 0.5s;
+        animation-duration: 0.5s;
+    }
+
+    .header-nav .bar {
+        display: block;
+    }
+
+    .hidden {
+        height: 0;
+        opacity: 0;
+    }
+
+    .header-nav .main-nav a {
+        display: block;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
