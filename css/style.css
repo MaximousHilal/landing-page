@@ -207,7 +207,6 @@ header .bar {
 .quoting .quote {
     padding: 8rem 6rem;
     text-align: center;
-    background-image: url(/img/quote.jpeg);
     -webkit-background-size: cover;
     background-size: cover;
     color: #fff;
